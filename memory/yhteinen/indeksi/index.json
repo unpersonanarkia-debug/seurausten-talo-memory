@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "updated": "2026-04-27",
+  "description": "Seurausten Talo — Muistipankki-indeksi",
+  "moottorit": {
+    "hanke": {
+      "casebook": "memory/hanke/casebook/",
+      "onnettomuudet": "memory/hanke/onnettomuudet/",
+      "feedback": "memory/hanke/feedback/",
+      "weights": "memory/hanke/weights/",
+      "schema": "schemas/hanke_schema_v1.json"
+    },
+    "paatos": {
+      "casebook": "memory/paatos/casebook/",
+      "ennakkotapaukset": "memory/paatos/ennakkotapaukset/",
+      "onnettomuudet": "memory/paatos/onnettomuudet/",
+      "feedback": "memory/paatos/feedback/",
+      "schema": "schemas/paatos_schema_v1.json"
+    },
+    "materiaali": {
+      "casebook": "memory/materiaali/casebook/",
+      "onnettomuudet": "memory/materiaali/onnettomuudet/",
+      "feedback": "memory/materiaali/feedback/",
+      "schema": "schemas/materiaalidomain_schema_v1.json"
+    }
+  },
+  "oppimislogiikka": {
+    "varoituskynnys": 3,
+    "paino_kasvu": 0.1,
+    "max_paino": 2.0
+  }
+}
