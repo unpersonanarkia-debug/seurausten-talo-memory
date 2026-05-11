@@ -1,0 +1,178 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Seurausten Talo — Materiaali-case v1",
+  "description": "Yksi materiaalitapaus muistipankissa — onnettomuudet, vauriot, materiaaliviat rakennuksissa ja rakenteissa.",
+  "type": "object",
+  "required": [
+    "case_id", "lahde", "otsikko", "kuvaus",
+    "materiaali", "vauriotyyppi", "seuraus", "oppi",
+    "riskipisteytys", "standardiviite", "created"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "Uniikki tunniste, esim. MAT-2024-001",
+      "pattern": "^MAT-\\d{4}-\\d{3}$"
+    },
+    "lahde": {
+      "type": "object",
+      "required": ["tyyppi", "nimi", "url_tai_viite", "vuosi"],
+      "properties": {
+        "tyyppi": {
+          "type": "string",
+          "enum": ["Tukes", "VTT", "BRE", "NIST", "ISO", "EN", "RILEM", "OTKES", "media", "tutkimus", "muu"]
+        },
+        "nimi": { "type": "string" },
+        "url_tai_viite": { "type": "string" },
+        "vuosi": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+      }
+    },
+    "otsikko": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "kuvaus": {
+      "type": "string",
+      "description": "Mitä tapahtui — 2-5 virkettä"
+    },
+    "materiaali": {
+      "type": "object",
+      "required": ["paatyyppi"],
+      "properties": {
+        "paatyyppi": {
+          "type": "string",
+          "enum": [
+            "betoni", "teräs", "puu", "tiili", "lasi",
+            "alumiini", "polymeerit", "komposiitti",
+            "eristeet", "pinnoitteet", "muu"
+          ]
+        },
+        "tarkenne": {
+          "type": "string",
+          "description": "Esim. 'C30/37 betoni', 'S355 teräs', 'EPS 100'"
+        },
+        "standardi": {
+          "type": "string",
+          "description": "Sovellettu standardi, esim. 'EN 206', 'SFS-EN 1993'"
+        }
+      }
+    },
+    "vauriotyyppi": {
+      "type": "string",
+      "enum": [
+        "väsymismurtuma",
+        "korroosio",
+        "pakkasrapautuminen",
+        "alkalipiikivireaktio",
+        "plastinen_muodonmuutos",
+        "halkeilua",
+        "delamimaatio",
+        "kosteusvaurio",
+        "palotekninen_vaurio",
+        "ylikuormitusmurtuma",
+        "liitosvirhe",
+        "asennusvirhe",
+        "materiaalivirhe",
+        "muu"
+      ]
+    },
+    "vaihe": {
+      "type": "string",
+      "enum": ["suunnittelu", "valmistus", "asennus", "käyttö", "huolto", "purku"],
+      "description": "Missä vaiheessa vaurio syntyi tai havaittiin"
+    },
+    "olosuhteet": {
+      "type": "object",
+      "description": "Rasitusolosuhteet, optional",
+      "properties": {
+        "rasitusluokka": {
+          "type": "string",
+          "description": "Esim. 'XC4', 'XF3', 'XS2' (EN 206)"
+        },
+        "kayttoika_tavoite_v": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Tavoiteltu käyttöikä vuosina"
+        },
+        "toteutunut_kayttoika_v": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Toteutunut käyttöikä vuosina ennen vaurioitumista"
+        }
+      }
+    },
+    "seuraus": {
+      "type": "object",
+      "required": ["vakavuus", "kuvaus"],
+      "properties": {
+        "vakavuus": {
+          "type": "string",
+          "enum": ["vähäinen", "kohtalainen", "vakava", "kriittinen"]
+        },
+        "kuvaus": { "type": "string" },
+        "loukkaantuneita": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "kuolleita": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "korjauskustannus_keur": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Arvioidut korjauskustannukset tuhansissa euroissa"
+        }
+      }
+    },
+    "oppi": {
+      "type": "string"
+    },
+    "standardiviite": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Relevantit standardit tai normit, esim. ['EN 206:2013', 'RIL 201-1-2017']",
+      "minItems": 1
+    },
+    "riskipisteytys": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "rakennustyyppi": {
+      "type": "string",
+      "enum": [
+        "asuinrakennus", "toimistorakennus", "teollisuus",
+        "silta", "tunneli", "pato", "satama",
+        "julkinen_rakennus", "infrastruktuuri", "muu"
+      ]
+    },
+    "maa": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "tagit": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "paino": {
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 2.0,
+      "default": 1.0
+    },
+    "created": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "feedback_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    }
+  }
+}
