@@ -1,0 +1,87 @@
+[
+  {
+    "case_id": "HNK-2016-001",
+    "lahde": {
+      "tyyppi": "VTV",
+      "nimi": "VTV Tarkastuskertomus 12/2022 — Apotti-hanke",
+      "url_tai_viite": "https://www.vtv.fi/julkaisut/apotti-hankkeen-tarkastus/",
+      "vuosi": 2022
+    },
+    "otsikko": "Apotti-potilastietojärjestelmä — kustannus- ja aikatauluylitys",
+    "kuvaus": "HUS:n ja Helsingin kaupungin yhteinen potilastietojärjestelmähanke Apotti ylitti alkuperäisen 254 miljoonan euron budjetin merkittävästi. Hankkeen kokonaiskustannukset nousivat yli 500 miljoonaan euroon. Käyttöönotto viivästyi useilla vuosilla, ja järjestelmän käytettävyys herätti kritiikkiä hoitohenkilöstön keskuudessa. VTV:n tarkastuksessa havaittiin puutteita hankintaprosessissa ja riskienhallinnassa.",
+    "virhetyyppi": "kustannusharha",
+    "virhetyyppi_kuvaus": "Alkuperäinen kustannusarvio perustui optimistisiin oletuksiin integraatiojen monimutkaisuudesta. Muutosjohtamista aliarvioitiin.",
+    "vaihe": "suunnittelu",
+    "seuraus": {
+      "vakavuus": "vakava",
+      "kuvaus": "Kustannukset yli kaksinkertaistuivat. Henkilöstön työtaakka kasvoi käyttöönottovaiheessa. Potilasturvallisuusriskejä järjestelmävirheiden takia.",
+      "kustannus_ylitys_prosentti": 97,
+      "aikataulu_ylitys_kk": 30
+    },
+    "oppi": "Suuren IT-hankinnan kustannusarvioon lisättävä vähintään 50% puskuri. Muutosjohtaminen ja henkilöstökoulutus budjetoitava erillisiksi kokonaisuuksiksi. Pilotointi pakollinen ennen laajaa käyttöönottoa.",
+    "riskipisteytys": 82,
+    "referenssiluokka": "IT-hanke",
+    "maa": "FI",
+    "budjetti_meur": 254,
+    "tagit": ["terveydenhuolto", "potilastietojärjestelmä", "HUS", "Helsinki", "hankinta"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  },
+  {
+    "case_id": "HNK-2017-001",
+    "lahde": {
+      "tyyppi": "VTV",
+      "nimi": "VTV Tarkastuskertomus — Länsimetro",
+      "url_tai_viite": "https://www.vtv.fi/julkaisut/lansimetron-rakentaminen/",
+      "vuosi": 2019
+    },
+    "otsikko": "Länsimetro — kustannus- ja aikatauluylitys infrastruktuurihankkeessa",
+    "kuvaus": "Espoon länsimetron rakentaminen ylitti alkuperäisen aikataulun useilla vuosilla. Hankkeen kustannukset nousivat arviolta 1,19 miljardista yli 1,5 miljardiin euroon. Teknisiä ongelmia ilmeni ovijärjestelmissä ja signalointijärjestelmissä. Hanke on Flyvbjergin referenssiluokan klassinen esimerkki rautatieinfrasta.",
+    "virhetyyppi": "optimismiharha",
+    "virhetyyppi_kuvaus": "Flyvbjergin tutkimusten mukainen systemaattinen optimismiharha: 90% suurista rautatiehankkeista ylittää kustannukset, mediaanin ylitys 45%.",
+    "vaihe": "suunnittelu",
+    "seuraus": {
+      "vakavuus": "vakava",
+      "kuvaus": "Merkittävät kustannusylitykset. Käyttöönotto viivästyi, mikä vaikutti liikennesuunnitteluun. Tekninen laatu lopulta hyväksyttävä.",
+      "kustannus_ylitys_prosentti": 26,
+      "aikataulu_ylitys_kk": 48
+    },
+    "oppi": "Rautatiehankkeissa käytettävä Flyvbjergin referenssiluokkaennustetta: varaudu 45% kustannusylitykseen ja 30% aikatauluylitykseen. Teknisten järjestelmien integraatiotestaus aloitettava vähintään 12 kk ennen avaamista.",
+    "riskipisteytys": 74,
+    "referenssiluokka": "infrastruktuuri",
+    "maa": "FI",
+    "budjetti_meur": 1190,
+    "tagit": ["metro", "raideinfraa", "Espoo", "Helsinki", "rautatie"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  },
+  {
+    "case_id": "HNK-2021-001",
+    "lahde": {
+      "tyyppi": "VTV",
+      "nimi": "VTV Tarkastuskertomus 17/2021 — Valtorin palvelukeskushanke",
+      "url_tai_viite": "https://www.vtv.fi/julkaisut/valtion-yhteisten-tieto-ja-viestintateknisten-palvelujen-tuottaminen/",
+      "vuosi": 2021
+    },
+    "otsikko": "Valtorin IT-palvelukeskuksen perustaminen — governance-ongelmat",
+    "kuvaus": "Valtion tieto- ja viestintätekniikkakeskus Valtorin perustamisen yhteydessä ilmeni merkittäviä johtamiseen ja asiakasohjaukseen liittyviä ongelmia. Palvelutasot eivät täyttyneet, ja valtion virastojen IT-kustannukset eivät laskeneet odotetusti. VTV havaitsi puutteita ohjausjärjestelmissä ja selkeän vastuunjaon puuttumisen.",
+    "virhetyyppi": "governance_puute",
+    "virhetyyppi_kuvaus": "Epäselvä vastuunjako tilaajan ja tuottajan välillä. Palvelutasosopimukset liian väljästi määriteltyjä. Kannustinrakenne puuttui.",
+    "vaihe": "käyttöönotto",
+    "seuraus": {
+      "vakavuus": "kohtalainen",
+      "kuvaus": "Palvelutasot alittuivat useissa palveluissa. Asiakasvirastot tyytymättömiä. Kustannussäästöt jäivät toteutumatta.",
+      "kustannus_ylitys_prosentti": 35
+    },
+    "oppi": "Palvelukeskusmallissa pakollinen: selkeät SLA-mittarit, sanktiot alituksista, vuosittainen ulkoinen auditointi. Tilaaja-tuottajamalli vaatii vahvan ohjausfunktion tilaajan puolella.",
+    "riskipisteytys": 61,
+    "referenssiluokka": "organisaatiouudistus",
+    "maa": "FI",
+    "tagit": ["IT-palvelukeskus", "Valtori", "valtionhallinto", "ICT", "shared services"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  }
+]
