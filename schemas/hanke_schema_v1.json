@@ -1,0 +1,150 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Seurausten Talo — Hanke-case v1",
+  "description": "Yksi hanketapaus muistipankissa. Jokainen kenttä pakollinen ellei merkitty optional.",
+  "type": "object",
+  "required": [
+    "case_id", "lahde", "otsikko", "kuvaus",
+    "virhetyyppi", "vaihe", "seuraus", "oppi",
+    "riskipisteytys", "referenssiluokka", "created"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "Uniikki tunniste, esim. HNK-2024-001",
+      "pattern": "^HNK-\\d{4}-\\d{3}$"
+    },
+    "lahde": {
+      "type": "object",
+      "required": ["tyyppi", "nimi", "url_tai_viite", "vuosi"],
+      "properties": {
+        "tyyppi": {
+          "type": "string",
+          "enum": ["VTV", "OTKES", "Flyvbjerg", "OECD", "EU", "media", "tutkimus", "muu"]
+        },
+        "nimi": { "type": "string" },
+        "url_tai_viite": { "type": "string" },
+        "vuosi": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+      }
+    },
+    "otsikko": {
+      "type": "string",
+      "description": "Lyhyt nimi tapaukselle, max 80 merkkiä",
+      "maxLength": 80
+    },
+    "kuvaus": {
+      "type": "string",
+      "description": "Mitä tapahtui — 2-5 virkettä"
+    },
+    "virhetyyppi": {
+      "type": "string",
+      "enum": [
+        "optimismiharha",
+        "laajuusrypistymä",
+        "hankintavirhe",
+        "resurssivaje",
+        "sidosryhmäkonflikti",
+        "tekninen_aliarviointi",
+        "aikatauluharha",
+        "kustannusharha",
+        "governance_puute",
+        "scope_creep",
+        "riippuvuusvirhe",
+        "muu"
+      ]
+    },
+    "virhetyyppi_kuvaus": {
+      "type": "string",
+      "description": "Tarkempi kuvaus jos virhetyyppi on 'muu' tai tarvitaan tarkennus"
+    },
+    "vaihe": {
+      "type": "string",
+      "enum": ["suunnittelu", "hankinta", "toteutus", "käyttöönotto", "ylläpito", "lopetus"],
+      "description": "Missä vaiheessa virhe tapahtui tai havaittiin"
+    },
+    "seuraus": {
+      "type": "object",
+      "required": ["vakavuus", "kuvaus"],
+      "properties": {
+        "vakavuus": {
+          "type": "string",
+          "enum": ["vähäinen", "kohtalainen", "vakava", "kriittinen"]
+        },
+        "kuvaus": { "type": "string" },
+        "kustannus_ylitys_prosentti": {
+          "type": "number",
+          "description": "Kustannusylitys prosentteina alkuperäisestä, optional",
+          "minimum": 0
+        },
+        "aikataulu_ylitys_kk": {
+          "type": "integer",
+          "description": "Aikatauluylitys kuukausissa, optional",
+          "minimum": 0
+        }
+      }
+    },
+    "oppi": {
+      "type": "string",
+      "description": "Mitä pitää tehdä toisin — konkreettinen toimenpide tai varoitusmerkki"
+    },
+    "riskipisteytys": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "0-100, missä 100 = korkein riski. Laskettu tai arvioitu jälkikäteen."
+    },
+    "referenssiluokka": {
+      "type": "string",
+      "enum": [
+        "IT-hanke",
+        "infrastruktuuri",
+        "rakennushanke",
+        "organisaatiouudistus",
+        "lakihanke",
+        "kansainvälinen",
+        "puolustus",
+        "terveydenhuolto",
+        "koulutus",
+        "muu"
+      ]
+    },
+    "maa": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2, esim. FI, SE, DE. Optional.",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "budjetti_meur": {
+      "type": "number",
+      "description": "Alkuperäinen budjetti miljoonissa euroissa. Optional.",
+      "minimum": 0
+    },
+    "tagit": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Vapaat hakusanat, esim. ['ICT', 'kunta', 'hankintalaki']"
+    },
+    "paino": {
+      "type": "number",
+      "description": "Oppimispainot, päivitetään automaattisesti. Alkuarvo 1.0",
+      "minimum": 0.1,
+      "maximum": 2.0,
+      "default": 1.0
+    },
+    "created": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 päivämäärä jolloin case lisättiin"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Viimeisin päivitys"
+    },
+    "feedback_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "description": "Kuinka monta kertaa tätä casea on käytetty analyysissä ja saatu feedback"
+    }
+  }
+}
