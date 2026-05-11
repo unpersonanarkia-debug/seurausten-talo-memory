@@ -26,7 +26,12 @@
       "Hankintalaki 1397/2016 § 123",
       "Hankintalaki 1397/2016 § 74"
     ],
-    "tagit": ["hankinta", "tarjousvertailu", "perustelut", "julkinen hankinta"],
+    "tagit": [
+      "hankinta",
+      "tarjousvertailu",
+      "perustelut",
+      "julkinen hankinta"
+    ],
     "paino": 1.0,
     "created": "2026-04-27",
     "feedback_count": 0
@@ -58,7 +63,13 @@
       "Hallintolaki 434/2003 § 27-30",
       "Kuntalaki 410/2015 § 97"
     ],
-    "tagit": ["esteellisyys", "jääviys", "kunta", "viranhaltija", "hankinta"],
+    "tagit": [
+      "esteellisyys",
+      "jääviys",
+      "kunta",
+      "viranhaltija",
+      "hankinta"
+    ],
     "paino": 1.0,
     "created": "2026-04-27",
     "feedback_count": 0
@@ -90,9 +101,45 @@
       "Maankäyttö- ja rakennuslaki 132/1999 § 133",
       "Hallintolaki 434/2003 § 34"
     ],
-    "tagit": ["rakennuslupa", "kuuleminen", "naapuri", "poikkeamislupa", "maankäyttö"],
+    "tagit": [
+      "rakennuslupa",
+      "kuuleminen",
+      "naapuri",
+      "poikkeamislupa",
+      "maankäyttö"
+    ],
     "paino": 1.0,
     "created": "2026-04-27",
     "feedback_count": 0
+  },
+  {
+    "case_id": "PAA-2026-94F",
+    "arkisto_id": "1F7AB94F",
+    "lahde": {
+      "tyyppi": "muu",
+      "nimi": "Oma päätös — Tekninen lautakunta",
+      "url_tai_viite": "arkisto/1F7AB94F",
+      "vuosi": 2026
+    },
+    "otsikko": "Debug-testi",
+    "kuvaus": "Päätös: hyvaksytty. Päättävä elin: Tekninen lautakunta. Analyysin hyödyntäminen: kokonaan.",
+    "tulos": "hyvaksytty",
+    "hyodyntaminen": "kokonaan",
+    "poikkeama": "",
+    "tarkistuspiste": "",
+    "riskipisteytys": 45,
+    "paino": 1.0,
+    "created": "2026-05-11",
+    "feedback_count": 0,
+    "kategoria": "oma_paatos",
+    "paatostyyppi": "hallintopäätös",
+    "virhetyyppi": "muu",
+    "oikeusala": "hallinto-oikeus",
+    "vaihe": "päätöksenteko",
+    "seuraus": {
+      "vakavuus": "vähäinen",
+      "kuvaus": "Päätös: hyvaksytty. Päättävä elin: Tekninen lautakunta. Analyysin hyödyntäminen: kokonaan."
+    },
+    "oppi": "Kirjattu oppimissilmukkaan."
   }
 ]
