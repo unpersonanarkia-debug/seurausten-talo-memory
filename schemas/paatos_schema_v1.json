@@ -1,0 +1,153 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Seurausten Talo — Päätös-case v1",
+  "description": "Yksi päätöstapaus muistipankissa — hallintopäätökset, oikeustapaukset, poliittiset päätökset.",
+  "type": "object",
+  "required": [
+    "case_id", "lahde", "otsikko", "kuvaus",
+    "paatostyyppi", "virhetyyppi", "seuraus", "oppi",
+    "riskipisteytys", "oikeusala", "created"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "Uniikki tunniste, esim. PAA-2024-001",
+      "pattern": "^PAA-\\d{4}-\\d{3}$"
+    },
+    "lahde": {
+      "type": "object",
+      "required": ["tyyppi", "nimi", "url_tai_viite", "vuosi"],
+      "properties": {
+        "tyyppi": {
+          "type": "string",
+          "enum": ["KKO", "KHO", "EIT", "AOA", "OKA", "VTV", "EU-tuomioistuin", "hallinto-oikeus", "muu"]
+        },
+        "nimi": { "type": "string" },
+        "url_tai_viite": { "type": "string" },
+        "vuosi": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "diaarinumero": {
+          "type": "string",
+          "description": "Virallinen diaarinumero tai tapausnumero, optional"
+        }
+      }
+    },
+    "otsikko": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "kuvaus": {
+      "type": "string",
+      "description": "Mitä päätettiin ja miksi — 2-5 virkettä"
+    },
+    "paatostyyppi": {
+      "type": "string",
+      "enum": [
+        "hallintopäätös",
+        "oikeuspäätös",
+        "poliittinen",
+        "hankintapäätös",
+        "lupapäätös",
+        "valitus",
+        "oikaisu",
+        "muu"
+      ]
+    },
+    "virhetyyppi": {
+      "type": "string",
+      "enum": [
+        "harkintavallan_ylitys",
+        "perusteluvelvollisuuden_laiminlyönti",
+        "kuulemisvirhe",
+        "esteellisyys",
+        "menettelyvirhe",
+        "laintulkintavirhe",
+        "suhteellisuusperiaate_loukkaus",
+        "yhdenvertaisuusloukkaus",
+        "tiedonantovirhe",
+        "puutteellinen_selvitys",
+        "intressiristiriita",
+        "muu"
+      ]
+    },
+    "vaihe": {
+      "type": "string",
+      "enum": ["valmistelu", "päätöksenteko", "toimeenpano", "muutoksenhaku", "täytäntöönpano"],
+      "description": "Missä vaiheessa virhe tapahtui"
+    },
+    "seuraus": {
+      "type": "object",
+      "required": ["vakavuus", "kuvaus"],
+      "properties": {
+        "vakavuus": {
+          "type": "string",
+          "enum": ["vähäinen", "kohtalainen", "vakava", "kriittinen"]
+        },
+        "kuvaus": { "type": "string" },
+        "kumottu": {
+          "type": "boolean",
+          "description": "Onko päätös kumottu muutoksenhaussa"
+        },
+        "korvaus_keur": {
+          "type": "number",
+          "description": "Mahdollinen korvaussumma tuhansissa euroissa",
+          "minimum": 0
+        }
+      }
+    },
+    "oppi": {
+      "type": "string"
+    },
+    "oikeusala": {
+      "type": "string",
+      "enum": [
+        "hallinto-oikeus",
+        "hankintaoikeus",
+        "ympäristöoikeus",
+        "maankäyttö",
+        "sosiaali-oikeus",
+        "vero-oikeus",
+        "EU-oikeus",
+        "perusoikeudet",
+        "muu"
+      ]
+    },
+    "riskipisteytys": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "ennakkotapaus": {
+      "type": "boolean",
+      "description": "Onko tällä prejudikaattivaikutus",
+      "default": false
+    },
+    "sovellettava_laki": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Sovellettavat lait, esim. ['Hallintolaki 434/2003 § 45', 'Hankintalaki 1397/2016']"
+    },
+    "tagit": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "paino": {
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 2.0,
+      "default": 1.0
+    },
+    "created": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "feedback_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    }
+  }
+}
