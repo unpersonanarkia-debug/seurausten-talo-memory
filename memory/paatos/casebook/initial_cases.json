@@ -1,0 +1,98 @@
+[
+  {
+    "case_id": "PAA-2019-001",
+    "lahde": {
+      "tyyppi": "KHO",
+      "nimi": "KHO 2019:93 — Hankintapäätöksen perusteluvelvollisuus",
+      "url_tai_viite": "https://www.finlex.fi/fi/oikeus/kho/vuosikirjat/2019/201900093",
+      "vuosi": 2019,
+      "diaarinumero": "KHO:2019:93"
+    },
+    "otsikko": "Hankintapäätöksen puutteelliset perustelut — KHO kumosi",
+    "kuvaus": "Hankintayksikkö oli tehnyt tarjousvertailun ja valinnut toimittajan, mutta hankintapäätöksen perustelut olivat niin niukat, etteivät hylätyt tarjoajat voineet niistä päätellä, miten pisteitä oli annettu eri kriteereistä. KHO totesi, että hankintalain mukainen perusteluvelvollisuus ei täyttynyt. Päätös kumottiin ja asia palautettiin hankintayksikölle.",
+    "paatostyyppi": "hankintapäätös",
+    "virhetyyppi": "perusteluvelvollisuuden_laiminlyönti",
+    "vaihe": "päätöksenteko",
+    "seuraus": {
+      "vakavuus": "kohtalainen",
+      "kuvaus": "Hankintaprosessi jouduttiin käynnistämään osittain uudelleen. Hankintayksikön resursseja kului oikeusprosessiin. Toimittajan valinta viivästyi.",
+      "kumottu": true
+    },
+    "oppi": "Pisteytystaulukko on aina liitettävä hankintapäätökseen. Jokainen arviointikriteeri on pisteytetty ja perusteltava kirjallisesti. Käytä matriisimuotoa: kriteeri × tarjoaja × pisteet × perustelut.",
+    "oikeusala": "hankintaoikeus",
+    "riskipisteytys": 58,
+    "ennakkotapaus": true,
+    "sovellettava_laki": [
+      "Hankintalaki 1397/2016 § 123",
+      "Hankintalaki 1397/2016 § 74"
+    ],
+    "tagit": ["hankinta", "tarjousvertailu", "perustelut", "julkinen hankinta"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  },
+  {
+    "case_id": "PAA-2020-001",
+    "lahde": {
+      "tyyppi": "AOA",
+      "nimi": "AOA — Kunnan viranhaltijan esteellisyys hankintapäätöksessä",
+      "url_tai_viite": "https://www.oikeusasiamies.fi/fi/ratkaisut",
+      "vuosi": 2020,
+      "diaarinumero": "EOAK/4521/2019"
+    },
+    "otsikko": "Viranhaltijan esteellisyys hankinnassa — hanke mitätöityi",
+    "kuvaus": "Kunnan tekninen johtaja osallistui hankintapäätöksen valmisteluun, vaikka hänen puolisonsa oli tarjouskilpailuun osallistuvan yrityksen hallituksen jäsen. Esteellisyyttä ei ollut ilmoitettu eikä viranhaltija ollut jäävännyt itseään. Oikeusasiamies totesi menettelyn lainvastaiseksi hallintolain esteellisyyssäännösten nojalla.",
+    "paatostyyppi": "hankintapäätös",
+    "virhetyyppi": "esteellisyys",
+    "vaihe": "valmistelu",
+    "seuraus": {
+      "vakavuus": "vakava",
+      "kuvaus": "Hankintapäätös mitätöityi. Kunnalle koitui mainevaurio. Hankintaprosessi käynnistettiin alusta. Viranhaltija sai huomautuksen.",
+      "kumottu": true
+    },
+    "oppi": "Esteellisyystarkistus on tehtävä kirjallisesti jokaisen hankintaan osallistuvan viranhaltijan osalta ennen valmistelun aloittamista. Lähi-ihmissuhteet (puoliso, vanhemmat, lapset, sisarukset) ja omistukset rekisteröidään. Epäselvissä tapauksissa pyydä oikeudellinen arvio.",
+    "oikeusala": "hallinto-oikeus",
+    "riskipisteytys": 71,
+    "ennakkotapaus": false,
+    "sovellettava_laki": [
+      "Hallintolaki 434/2003 § 27-30",
+      "Kuntalaki 410/2015 § 97"
+    ],
+    "tagit": ["esteellisyys", "jääviys", "kunta", "viranhaltija", "hankinta"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  },
+  {
+    "case_id": "PAA-2022-001",
+    "lahde": {
+      "tyyppi": "KHO",
+      "nimi": "KHO 2022:12 — Rakennuslupa ja kuulemisvelvollisuus",
+      "url_tai_viite": "https://www.finlex.fi/fi/oikeus/kho/vuosikirjat/2022/202200012",
+      "vuosi": 2022,
+      "diaarinumero": "KHO:2022:12"
+    },
+    "otsikko": "Rakennusluvan myöntäminen ilman asianmukaista naapurin kuulemista",
+    "kuvaus": "Kunta myönsi rakennusluvan hankkeelle, joka poikkesi merkittävästi asemakaavasta. Naapureita ei ollut kuultu asianmukaisesti — kuulemiskirje oli lähetetty, mutta se ei täyttänyt lain vaatimuksia, koska siinä ei kuvattu riittävästi hankkeen poikkeamaa kaavasta. KHO kumosi luvan ja edellytti uuden kuulemiskierroksen.",
+    "paatostyyppi": "lupapäätös",
+    "virhetyyppi": "kuulemisvirhe",
+    "vaihe": "valmistelu",
+    "seuraus": {
+      "vakavuus": "kohtalainen",
+      "kuvaus": "Rakennuslupa kumottiin. Hankkeen toteutus viivästyi arviolta 18 kuukautta. Rakennuttajalle koitui merkittäviä lisäkustannuksia.",
+      "kumottu": true
+    },
+    "oppi": "Kuulemiskirjeessä on yksilöitävä tarkasti mistä poiketaan ja miten se vaikuttaa naapuriin. Pelkkä yleisviittaus hankkeeseen ei riitä. Käytä tarkistuslistaa: 1) mitä poiketaan 2) miten mitataan poikkeama 3) miten vaikuttaa naapuriin 4) milloin ja miten voi antaa huomautuksen.",
+    "oikeusala": "maankäyttö",
+    "riskipisteytys": 55,
+    "ennakkotapaus": false,
+    "sovellettava_laki": [
+      "Maankäyttö- ja rakennuslaki 132/1999 § 133",
+      "Hallintolaki 434/2003 § 34"
+    ],
+    "tagit": ["rakennuslupa", "kuuleminen", "naapuri", "poikkeamislupa", "maankäyttö"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  }
+]
