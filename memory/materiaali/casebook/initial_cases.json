@@ -1,0 +1,125 @@
+[
+  {
+    "case_id": "MAT-2016-001",
+    "lahde": {
+      "tyyppi": "OTKES",
+      "nimi": "OTKES — Sillan sortuminen Laukaassa 2016",
+      "url_tai_viite": "https://www.onnettomuustutkinta.fi/fi/tutkintaselostukset",
+      "vuosi": 2016
+    },
+    "otsikko": "Betonisiltaelementtien asennusvirhe — silta sortui",
+    "kuvaus": "Laukaan kunnassa sillankorjaustyömaalla tapahtui betonielementtien sortuma. Esijännitetyt palkkielementit asennettiin virheellisesti, ja tukikohdat eivät vastanneet suunnitelmia. Elementtien nostossa käytettiin väärää nostopistettä. Onnettomuudessa loukkaantui kaksi rakennustyöntekijää.",
+    "materiaali": {
+      "paatyyppi": "betoni",
+      "tarkenne": "Esijännitetty betonipalkki, C35/45",
+      "standardi": "EN 1992-1-1 (Eurocode 2)"
+    },
+    "vauriotyyppi": "asennusvirhe",
+    "vaihe": "asennus",
+    "olosuhteet": {
+      "rasitusluokka": "XC3",
+      "kayttoika_tavoite_v": 100
+    },
+    "seuraus": {
+      "vakavuus": "vakava",
+      "kuvaus": "Silta sortui osittain asennusvaiheessa. Kaksi työntekijää loukkaantui, yksi vakavasti. Työmaa keskeytyi useiksi viikoiksi.",
+      "loukkaantuneita": 2,
+      "korjauskustannus_keur": 850
+    },
+    "oppi": "Esijännitettyjen elementtien asennussuunnitelma on laadittava erillisesti ja hyväksytettävä rakennesuunnittelijalla. Nostopisteet merkittävä elementtiin pysyvästi. Asennustoleranssit tarkistettava ennen nostojen aloitusta.",
+    "standardiviite": [
+      "EN 1992-1-1:2004 (Eurocode 2)",
+      "SFS-EN 13369 betonituotteiden yleiset säännöt",
+      "RIL 179-2022 Betonielementtien nostot"
+    ],
+    "riskipisteytys": 78,
+    "rakennustyyppi": "silta",
+    "maa": "FI",
+    "tagit": ["silta", "betoni", "esijännitetty", "elementti", "nostotyö", "asennus"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  },
+  {
+    "case_id": "MAT-2012-001",
+    "lahde": {
+      "tyyppi": "VTT",
+      "nimi": "VTT Research Report — Pakkasrapautuminen suomalaisissa betonirakenteissa",
+      "url_tai_viite": "https://www.vttresearch.com/fi",
+      "vuosi": 2012
+    },
+    "otsikko": "1970-luvun parkkihallin betonin pakkasrapautuminen — ennenaikainen uusiminen",
+    "kuvaus": "Suomalaisissa 1970-luvulla rakennetuissa parkkihalleissa havaittiin laajamittaista betonin pakkasrapautumista merkittävästi ennen suunniteltua käyttöikää. Syynä oli riittämätön ilmavesisuhdearvo betonissa (w/c > 0.6) yhdistettynä puutteelliseen suojahuokostukseen. Betonit eivät kestäneet jäätymis-sulamisrasituksia Suomen olosuhteissa. VTT:n tutkimuksessa arvioitiin, että yli 40% 1970-luvun parkkihalleista vaati ennenaikaista uusimista tai massiivista saneerausta.",
+    "materiaali": {
+      "paatyyppi": "betoni",
+      "tarkenne": "K25-K30 vanha normi, w/c 0.65-0.70, suojahuokostus puutteellinen",
+      "standardi": "Suomen Betoninormit 1965 (vanhentunut)"
+    },
+    "vauriotyyppi": "pakkasrapautuminen",
+    "vaihe": "käyttö",
+    "olosuhteet": {
+      "rasitusluokka": "XF4",
+      "kayttoika_tavoite_v": 50,
+      "toteutunut_kayttoika_v": 20
+    },
+    "seuraus": {
+      "vakavuus": "vakava",
+      "kuvaus": "Laajamittainen rakenteellinen vaurio ennen suunniteltua käyttöikää. Halkeilu, betonin lohkeilu, raudoituksen paljastuminen. Useita rakennuksia jouduttiin sulkemaan turvallisuussyistä.",
+      "korjauskustannus_keur": 3500
+    },
+    "oppi": "XF3/XF4-rasitusluokassa (jäätymis-sulaminen + suolaus) betonin w/c-suhde enintään 0.45. Suojahuokostus P-luku ≥ 0.18 mm (EN 480-11). Älä hyväksy 1965-normien betonimäärityksiä saneerauksessakaan — vaadi vähintään EN 206 + kansallinen liite.",
+    "standardiviite": [
+      "EN 206:2013+A2:2021",
+      "SFS 7022 (kansallinen liite EN 206:een)",
+      "EN 480-11 Suojahuokostuksen mittaus"
+    ],
+    "riskipisteytys": 69,
+    "rakennustyyppi": "toimistorakennus",
+    "maa": "FI",
+    "tagit": ["parkkihalli", "betoni", "pakkasrapautuminen", "XF4", "1970-luku", "saneeraus"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  },
+  {
+    "case_id": "MAT-2018-001",
+    "lahde": {
+      "tyyppi": "Tukes",
+      "nimi": "Tukes — Teräsrakenteen väsymismurtuma nosturissa 2018",
+      "url_tai_viite": "https://tukes.fi/tuotteet-ja-palvelut/nosturit",
+      "vuosi": 2018
+    },
+    "otsikko": "Nosturin pääkannattajan väsymismurtuma — hitsausvirhe kriittisessä kohdassa",
+    "kuvaus": "Teollisuusnosturin pääkannattajassa havaittiin väsymissärö hitsausliitoksen kohdalla rutiinitarkastuksessa. Tukesin tutkinnassa selvisi, että hitsausliitos oli tehty virheellisellä tekniikalla, jättäen reunaan sulfidisulkeuman. Tämä toimi säröytymiskohtana dynaamisen kuormituksen alla. Nosturin laskettu kuormitussykli oli 1,2 miljoonaa jaksoa, mutta särö havaittiin jo 400 000 jakson jälkeen.",
+    "materiaali": {
+      "paatyyppi": "teräs",
+      "tarkenne": "S355J2 rakenneteräs, hitsausliitos",
+      "standardi": "EN 1993-1-9 (Eurocode 3, väsyminen)"
+    },
+    "vauriotyyppi": "väsymismurtuma",
+    "vaihe": "käyttö",
+    "olosuhteet": {
+      "rasitusluokka": "S6 (EN 13001, nosturiluokitus)",
+      "kayttoika_tavoite_v": 25,
+      "toteutunut_kayttoika_v": 7
+    },
+    "seuraus": {
+      "vakavuus": "kriittinen",
+      "kuvaus": "Nosturi poistettiin käytöstä välittömästi. Tuotantoseisakki 3 viikkoa. Murtuma olisi tapahtunut todennäköisesti 50 000-100 000 lisäjakson kuluttua, aiheuttaen katastrofaalisen sortuman.",
+      "korjauskustannus_keur": 420
+    },
+    "oppi": "Dynaamisia kuormituksia kantavien teräsrakenteiden hitsit tarkistettava NDT-menetelmillä (ultraääni tai magneettijauhe) tekohetkellä. Kriittisten liitosten ultraäänitarkastus 5 vuoden välein käytön aikana. Hitsausliitosluokka D tai parempi kaikissa pääkannattajan liitoksissa nosturiluokissa S5-S9.",
+    "standardiviite": [
+      "EN 1993-1-9:2005 (Eurocode 3 väsyminen)",
+      "EN 13001-3-1 Nosturien rakenteen laskenta",
+      "SFS-EN ISO 17637 Hitsausliitosten tarkastus"
+    ],
+    "riskipisteytys": 85,
+    "rakennustyyppi": "teollisuus",
+    "maa": "FI",
+    "tagit": ["nosturi", "teräs", "väsyminen", "hitsi", "NDT", "tarkastus", "S355"],
+    "paino": 1.0,
+    "created": "2026-04-27",
+    "feedback_count": 0
+  }
+]
