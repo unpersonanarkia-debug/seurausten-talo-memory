@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "case_id": "tiesilta_betoni_2026",
+  "case_id": "atlantinsilta_betoni_2026",
   "timestamp": "2026-05-19T11:48:46.231518+00:00",
   "rakenne": {
     "nimi": "Materiaali: Betoni + Teräs (klikkaa molemmat aktii",
     "tyyppi": "tiesilta",
-    "sijainti": "",
+    "sijainti": "Helsinki",
     "kiinteistotunnus": "",
-    "valmistumisvuosi": null,
+    "valmistumisvuosi": 2021,
     "suunniteltu_ika_v": 100
   },
   "omistusketju": [],
@@ -19,7 +19,7 @@
     "kuntoindeksi": 1,
     "normalisaatioindeksi": 18.1,
     "jaljella_oleva_v": 100.0,
-    "rasitusluokka": "C3"
+    "rasitusluokka": "XS3"
   },
   "ekologia": {
     "co2_kg_kokonais": 5040000.0,
