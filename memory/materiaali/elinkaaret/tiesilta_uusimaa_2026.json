@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "case_id": "tiesilta_uusimaa_2026",
-  "timestamp": "2026-05-19T13:01:24.835460+00:00",
+  "timestamp": "2026-05-19T13:50:40.548326+00:00",
   "rakenne": {
     "nimi": "Materiaali: Betoni + Teräs (klikkaa molemmat aktii",
     "tyyppi": "tiesilta",
     "sijainti": "Uusimaa",
     "kiinteistotunnus": "",
-    "valmistumisvuosi": null,
+    "valmistumisvuosi": 2021,
     "suunniteltu_ika_v": 100
   },
   "omistusketju": [],
@@ -16,33 +16,39 @@
     "teräs"
   ],
   "fysiikka": {
-    "kuntoindeksi": 1,
-    "normalisaatioindeksi": 18.1,
-    "jaljella_oleva_v": 100.0,
+    "kuntoindeksi": 2,
+    "normalisaatioindeksi": 30.2,
+    "jaljella_oleva_v": 71.2,
     "rasitusluokka": "C3"
   },
   "ekologia": {
     "co2_kg_kokonais": 5040000.0,
     "kierratysaste_pct": 72.2,
-    "kestävyysindeksi": 0.517,
+    "kestävyysindeksi": 0.442,
     "co2_data_lahde": "Käyttäjän syöttämä massa: 18000 m³"
   },
   "talous": {
     "npv_eur": 45679641,
-    "tco_eur": 46022834,
-    "co2_vero_eur": 526792,
+    "tco_eur": 45986564,
+    "co2_vero_eur": 490522,
     "kierratysarvo_eur": 183600,
     "hankintahinta_eur": null
   },
   "evidenssihistoria": [
     {
-      "pvm": "2026-05-19T13:01:24.835460+00:00",
+      "pvm": "2026-05-19T13:50:40.548326+00:00",
       "tapahtuma": "Elinkaarianalyysi tehty",
       "tekija": "Seurausten Talo Core",
       "rooli": "analysoija",
       "dokumentti_url": null,
-      "havainto": "KI 1/4, normalisaatioindeksi 18.1/100",
-      "toimenpide": "",
+      "havainto": "KI 2/4, normalisaatioindeksi 30.2/100",
+      "toimenpide": {
+        "prioriteetti": 1,
+        "failure_id": "FM-B02",
+        "toimenpide": "Impregnointisuoja + tarkastus kevaalla (EN 12390-9)",
+        "kiireellisyys": "red",
+        "early_signal": "Hilseilevä pintabetoni, karhentuva pinta, aggregaattien paljastuminen"
+      },
       "kustannus_eur": null,
       "seuraava_tarkastus": null
     }
@@ -50,30 +56,10 @@
   "huoltoaikataulu": [
     {
       "vuosi_rakentamisesta": 5,
-      "kalenteri_vuosi": 2031,
-      "toimenpide": "Kloridimittaus baseline",
-      "prioriteetti": "korkea",
-      "tila": "tuleva",
-      "kustannus_arvio_eur": null,
-      "toteutunut_kustannus_eur": null,
-      "vastuutaho": ""
-    },
-    {
-      "vuosi_rakentamisesta": 10,
-      "kalenteri_vuosi": 2036,
-      "toimenpide": "Kuntotutkimus BY 42",
+      "kalenteri_vuosi": 2026,
+      "toimenpide": "{'prioriteetti': 1, 'failure_id': 'FM-B02', 'toimenpide': 'Impregnointisuoja + tarkastus kevaalla (EN 12390-9)', 'kiireellisyys': <Tila.RED: 'red'>, 'early_signal': 'Hilseilevä pintabetoni, karhentuva pinta, aggregaattien paljastuminen'}",
       "prioriteetti": "normaali",
-      "tila": "tuleva",
-      "kustannus_arvio_eur": null,
-      "toteutunut_kustannus_eur": null,
-      "vastuutaho": ""
-    },
-    {
-      "vuosi_rakentamisesta": 25,
-      "kalenteri_vuosi": 2051,
-      "toimenpide": "Varhainen korjausikkuna",
-      "prioriteetti": "normaali",
-      "tila": "tuleva",
+      "tila": "tehty",
       "kustannus_arvio_eur": null,
       "toteutunut_kustannus_eur": null,
       "vastuutaho": ""
@@ -93,7 +79,7 @@
     "analyysi_versio": "2.0",
     "analysoija": "seurausten-talo-core",
     "lisenssi": "",
-    "seuraava_paivitys": "2031-05-18T13:01:24.835460+00:00",
+    "seuraava_paivitys": "2031-05-18T13:50:40.548326+00:00",
     "muistiketju_katkeamaton": true
   }
 }
