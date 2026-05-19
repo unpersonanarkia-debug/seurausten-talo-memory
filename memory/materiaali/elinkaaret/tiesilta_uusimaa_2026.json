@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "case_id": "tiesilta_uusimaa_2026",
+  "timestamp": "2026-05-19T13:01:24.835460+00:00",
+  "rakenne": {
+    "nimi": "Materiaali: Betoni + Teräs (klikkaa molemmat aktii",
+    "tyyppi": "tiesilta",
+    "sijainti": "Uusimaa",
+    "kiinteistotunnus": "",
+    "valmistumisvuosi": null,
+    "suunniteltu_ika_v": 100
+  },
+  "omistusketju": [],
+  "materiaalit": [
+    "betoni",
+    "teräs"
+  ],
+  "fysiikka": {
+    "kuntoindeksi": 1,
+    "normalisaatioindeksi": 18.1,
+    "jaljella_oleva_v": 100.0,
+    "rasitusluokka": "C3"
+  },
+  "ekologia": {
+    "co2_kg_kokonais": 5040000.0,
+    "kierratysaste_pct": 72.2,
+    "kestävyysindeksi": 0.517,
+    "co2_data_lahde": "Käyttäjän syöttämä massa: 18000 m³"
+  },
+  "talous": {
+    "npv_eur": 45679641,
+    "tco_eur": 46022834,
+    "co2_vero_eur": 526792,
+    "kierratysarvo_eur": 183600,
+    "hankintahinta_eur": null
+  },
+  "evidenssihistoria": [
+    {
+      "pvm": "2026-05-19T13:01:24.835460+00:00",
+      "tapahtuma": "Elinkaarianalyysi tehty",
+      "tekija": "Seurausten Talo Core",
+      "rooli": "analysoija",
+      "dokumentti_url": null,
+      "havainto": "KI 1/4, normalisaatioindeksi 18.1/100",
+      "toimenpide": "",
+      "kustannus_eur": null,
+      "seuraava_tarkastus": null
+    }
+  ],
+  "huoltoaikataulu": [
+    {
+      "vuosi_rakentamisesta": 5,
+      "kalenteri_vuosi": 2031,
+      "toimenpide": "Kloridimittaus baseline",
+      "prioriteetti": "korkea",
+      "tila": "tuleva",
+      "kustannus_arvio_eur": null,
+      "toteutunut_kustannus_eur": null,
+      "vastuutaho": ""
+    },
+    {
+      "vuosi_rakentamisesta": 10,
+      "kalenteri_vuosi": 2036,
+      "toimenpide": "Kuntotutkimus BY 42",
+      "prioriteetti": "normaali",
+      "tila": "tuleva",
+      "kustannus_arvio_eur": null,
+      "toteutunut_kustannus_eur": null,
+      "vastuutaho": ""
+    },
+    {
+      "vuosi_rakentamisesta": 25,
+      "kalenteri_vuosi": 2051,
+      "toimenpide": "Varhainen korjausikkuna",
+      "prioriteetti": "normaali",
+      "tila": "tuleva",
+      "kustannus_arvio_eur": null,
+      "toteutunut_kustannus_eur": null,
+      "vastuutaho": ""
+    }
+  ],
+  "skenaariot": {
+    "ennaltaehkaisy_npv_eur": 34883936.0,
+    "varhainen_korjaus_npv_eur": 36858665.0,
+    "uusiminen_npv_eur": 42946101.0,
+    "ennaltaehkaisy_eur": null,
+    "varhainen_korjaus_eur": null,
+    "uusiminen_eur": null
+  },
+  "failure_modet": [],
+  "canonical_invariantit": [],
+  "meta": {
+    "analyysi_versio": "2.0",
+    "analysoija": "seurausten-talo-core",
+    "lisenssi": "",
+    "seuraava_paivitys": "2031-05-18T13:01:24.835460+00:00",
+    "muistiketju_katkeamaton": true
+  }
+}
