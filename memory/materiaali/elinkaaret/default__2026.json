@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "case_id": "default__2026",
-  "timestamp": "2026-05-26T14:22:43.340153+00:00",
+  "timestamp": "2026-05-26T15:22:08.216997+00:00",
   "rakenne": {
-    "nimi": "uimahallin allastila Lappeenranta",
+    "nimi": "Lappeenrannan uimahallin allastila 33M€ rakennusku",
     "tyyppi": "default",
     "sijainti": "",
     "kiinteistotunnus": "",
@@ -27,15 +27,15 @@
     "co2_data_lahde": "Arvioitu pinta-alasta: 500 m² × kerroin"
   },
   "talous": {
-    "npv_eur": 2143062,
-    "tco_eur": 2144566,
+    "npv_eur": 24545400,
+    "tco_eur": 24547750,
     "co2_vero_eur": 2524,
-    "kierratysarvo_eur": 1020,
+    "kierratysarvo_eur": 174,
     "hankintahinta_eur": null
   },
   "evidenssihistoria": [
     {
-      "pvm": "2026-05-26T14:22:43.340153+00:00",
+      "pvm": "2026-05-26T15:22:08.216997+00:00",
       "tapahtuma": "Elinkaarianalyysi tehty",
       "tekija": "Seurausten Talo Core",
       "rooli": "analysoija",
@@ -79,9 +79,9 @@
     }
   ],
   "skenaariot": {
-    "ennaltaehkaisy_npv_eur": 1823548.0,
-    "varhainen_korjaus_npv_eur": 1944260.0,
-    "uusiminen_npv_eur": 2315465.0,
+    "ennaltaehkaisy_npv_eur": 48141673.0,
+    "varhainen_korjaus_npv_eur": 51328463.0,
+    "uusiminen_npv_eur": 61128271.0,
     "ennaltaehkaisy_eur": null,
     "varhainen_korjaus_eur": null,
     "uusiminen_eur": null
@@ -92,7 +92,7 @@
     "analyysi_versio": "2.0",
     "analysoija": "seurausten-talo-core",
     "lisenssi": "",
-    "seuraava_paivitys": "2031-05-25T14:22:43.340153+00:00",
+    "seuraava_paivitys": "2031-05-25T15:22:08.216997+00:00",
     "muistiketju_katkeamaton": true
   }
 }
