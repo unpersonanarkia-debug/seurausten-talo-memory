@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "case_id": "default__2026",
-  "timestamp": "2026-05-26T10:03:58.171039+00:00",
+  "timestamp": "2026-05-26T10:25:52.430956+00:00",
   "rakenne": {
     "nimi": "uimahallin allastila kloridikorrooosio Lappeenrant",
     "tyyppi": "default",
@@ -16,14 +16,14 @@
   ],
   "fysiikka": {
     "kuntoindeksi": 1,
-    "normalisaatioindeksi": 18.1,
+    "normalisaatioindeksi": 88,
     "jaljella_oleva_v": 50.0,
     "rasitusluokka": "C3"
   },
   "ekologia": {
     "co2_kg_kokonais": 38825,
-    "kierratysaste_pct": 72.2,
-    "kestävyysindeksi": 0.517,
+    "kierratysaste_pct": 51.0,
+    "kestävyysindeksi": 0.453,
     "co2_data_lahde": "Arvioitu pinta-alasta: 500 m² × kerroin"
   },
   "talous": {
@@ -35,12 +35,12 @@
   },
   "evidenssihistoria": [
     {
-      "pvm": "2026-05-26T10:03:58.171039+00:00",
+      "pvm": "2026-05-26T10:25:52.430956+00:00",
       "tapahtuma": "Elinkaarianalyysi tehty",
       "tekija": "Seurausten Talo Core",
       "rooli": "analysoija",
       "dokumentti_url": null,
-      "havainto": "KI 1/4, normalisaatioindeksi 18.1/100",
+      "havainto": "KI 1/4, normalisaatioindeksi 88/100",
       "toimenpide": "",
       "kustannus_eur": null,
       "seuraava_tarkastus": null
@@ -92,7 +92,7 @@
     "analyysi_versio": "2.0",
     "analysoija": "seurausten-talo-core",
     "lisenssi": "",
-    "seuraava_paivitys": "2031-05-25T10:03:58.171039+00:00",
+    "seuraava_paivitys": "2031-05-25T10:25:52.430956+00:00",
     "muistiketju_katkeamaton": true
   }
 }
