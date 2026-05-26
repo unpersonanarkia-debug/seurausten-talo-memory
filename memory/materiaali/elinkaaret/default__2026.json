@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "case_id": "default__2026",
-  "timestamp": "2026-05-25T19:49:12.591561+00:00",
+  "timestamp": "2026-05-26T08:29:02.449067+00:00",
   "rakenne": {
     "nimi": "Lappeenrannan uimahallin allastila. Uusi rakennus ",
     "tyyppi": "default",
@@ -35,7 +35,7 @@
   },
   "evidenssihistoria": [
     {
-      "pvm": "2026-05-25T19:49:12.591561+00:00",
+      "pvm": "2026-05-26T08:29:02.449067+00:00",
       "tapahtuma": "Elinkaarianalyysi tehty",
       "tekija": "Seurausten Talo Core",
       "rooli": "analysoija",
@@ -92,7 +92,7 @@
     "analyysi_versio": "2.0",
     "analysoija": "seurausten-talo-core",
     "lisenssi": "",
-    "seuraava_paivitys": "2031-05-24T19:49:12.591561+00:00",
+    "seuraava_paivitys": "2031-05-25T08:29:02.449067+00:00",
     "muistiketju_katkeamaton": true
   }
 }
