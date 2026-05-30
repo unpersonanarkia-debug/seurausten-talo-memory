@@ -1,0 +1,5 @@
+{
+  "versio": "1.0",
+  "kuvaus": "Käyttäjäpalautteet — täytetään automaattisesti /api/oppiminen/feedback/:case_id kautta",
+  "palautteet": []
+}
